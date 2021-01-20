@@ -28,7 +28,7 @@ class ProfilePage extends Component {
       department: "",
       government: "",
       phone: "",
-      isChange: false,
+      isChange: false
     };
 
     this.handleChange = this.handleChange.bind(this);
@@ -119,10 +119,13 @@ class ProfilePage extends Component {
         government: decoded.government,
         phone: decoded.phone,
       });
+    }else{
+      this.props.history.push("/register");
     }
   }
   componentDidMount() {
     this.LoadDataUser();
+
   }
   render() {
     return (

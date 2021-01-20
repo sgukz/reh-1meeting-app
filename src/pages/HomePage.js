@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { useHistory } from "react-router-dom";
 import axios from "axios";
 import Swal from "sweetalert2";
-import liff from '@line/liff';
+import liff from "@line/liff";
 import config from "../config";
 import {
   MDBEdgeHeader,
@@ -86,6 +86,7 @@ const HomePage = (props) => {
             JSON.stringify(resp.data.data[0].userId)
           );
         } else {
+          localStorage.clear();
           history.push("/register");
         }
       })
@@ -126,11 +127,13 @@ const HomePage = (props) => {
           localStorage.setItem("isMeeting", "true");
         } else if (resp.data.code === 400) {
           localStorage.setItem("isMeeting", "false");
-          Swal.fire({
-            title: "แจ้งเตือน",
-            text: resp.data.msg,
-            icon: "error",
-          });
+          // if (params !== "") {
+          //   Swal.fire({
+          //     title: "แจ้งเตือน",
+          //     text: resp.data.msg,
+          //     icon: "error",
+          //   });
+          // }
         }
       })
       .catch((error) => {
@@ -239,11 +242,12 @@ const HomePage = (props) => {
   };
   useEffect(() => {
     CheckUser();
-    const queryString = decodeURIComponent(window.location.search);
-    const params = new URLSearchParams(queryString);
-    if (params.get("docno") !== null) {
-      getMeeting(params.get("docno"));
-      getCheckInCheckOut(userid, params.get("docno"));
+    const queryString = props.location.search;
+    let str = queryString.split("=");
+    const params = str.length > 0 ? str[1] : "";
+    if (params !== "") {
+      getMeeting(params);
+      getCheckInCheckOut(userid, params);
     }
   });
   return (
@@ -325,7 +329,13 @@ const HomePage = (props) => {
                             : ""}
                         </span>
                       </div>
-                      <div className={isTimeMeeting === 1 || isTimeMeeting === 2 ? "hidden" : ""}>
+                      <div
+                        className={
+                          isTimeMeeting === 1 || isTimeMeeting === 2
+                            ? "hidden"
+                            : ""
+                        }
+                      >
                         <MDBBtn
                           gradient="blue"
                           size="sm"
@@ -352,7 +362,15 @@ const HomePage = (props) => {
         </MDBAnimation>
         <div className={isMeeting ? "footer hidden" : "footer"}>
           <MDBCol className="text-center">
-            <MDBBtn floating="true" gradient="blue" rounded color="danger" onClick={()=> window.location='https://line.me/R/nv/QRCodeReader'}>
+            <MDBBtn
+              floating="true"
+              gradient="blue"
+              rounded
+              color="danger"
+              onClick={() =>
+                (window.location = "https://line.me/R/nv/QRCodeReader")
+              }
+            >
               <MDBIcon icon="qrcode" size="4x" />
               <br />
               <strong className="ml-2" style={{ paddingBottom: "15px" }}>

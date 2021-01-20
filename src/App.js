@@ -8,7 +8,7 @@ import {
   MDBNavItem,
   MDBNavLink,
 } from "mdbreact";
-import { BrowserRouter as Router, Link } from "react-router-dom";
+import { HashRouter as Router, Link } from "react-router-dom";
 import liff from "@line/liff";
 import DefaultImg from "./assets/default-image.jpg";
 import Routes from "./Routes";
