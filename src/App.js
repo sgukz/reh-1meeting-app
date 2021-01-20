@@ -89,7 +89,7 @@ class App extends Component {
                     to="/profile"
                     onClick={this.closeCollapse("mainNavbarCollapse")}
                   >
-                    <strong>sgukz</strong>
+                    <strong>sguk</strong>
                   </MDBNavLink>
                 </MDBNavItem>
               </MDBNavbarNav>
