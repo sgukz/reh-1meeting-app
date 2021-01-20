@@ -1,0 +1,140 @@
+body {
+    background-color: #ffebee;
+}
+
+.hidden {
+    display: none;
+}
+
+a.border.nav-link.border-light.rounded.mr-1 {
+    color: #3F729B;
+}
+
+a.border.nav-link.border-light.rounded.mr-1:hover {
+    color: #1C2331;
+}
+
+.btn.btn-sm.indigo:hover {
+    color: #fff;
+}
+
+.nav-link.active {
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+#categories>.col-md-4.mb-5 {
+    margin-bottom: 8rem !important;
+}
+
+
+/* .sectionPage {
+    position: relative;
+    top: -15px;
+    margin-bottom: -250px;
+}
+
+.sectionPage::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-position: center center;
+    background-size: cover;
+    filter: opacity(.1);
+} */
+
+.drop-container {
+    margin: 0;
+    width: 100%;
+    height: 170px;
+    border: 4px dashed #4aa1f3;
+    cursor: pointer;
+    align-content: center;
+    /* margin-left: 10%; */
+}
+
+.file-input {
+    display: none;
+}
+
+.file-name {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    color: #4aa1f3;
+}
+
+.file-error {
+    display: inline-block;
+    vertical-align: top;
+    margin-left: 50px;
+    color: #9aa9bb;
+}
+
+.file-error-message {
+    color: red;
+}
+
+.file-type {
+    display: inline-block!important;
+    position: absolute;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 13px;
+    margin-top: 25px;
+    padding: 0 4px;
+    border-radius: 2px;
+    box-shadow: 1px 1px 2px #abc;
+    color: #fff;
+    background: #0080c8;
+    text-transform: uppercase;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.progress-container {
+    background: white;
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.progress-container span {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+.progress {
+    width: 90%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #efefef;
+    height: 20px;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    position: absolute;
+    background-color: #4aa1f3;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+@media (min-width: 768px) {
+    body {
+        font-size: 1em;
+    }
+}
