@@ -113,7 +113,7 @@ const RegisterPage = () => {
               >
                 <MDBCardBody>
                   <MDBCol md="12">
-                    <h5 className="text-primary">ลงทะเบียน</h5>
+                    <h5 className="text-primary">ลงทะเบียนผู้ใช้งานใหม่</h5>
                     <form className="needs-validation" onSubmit={submitHandler}>
                       <MDBRow>
                         <MDBCol md="4" className="mb-3">
