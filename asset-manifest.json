@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/reh-1meeting-app/static/css/main.d827372d.chunk.css",
-    "main.js": "/reh-1meeting-app/static/js/main.679a3319.chunk.js",
-    "main.js.map": "/reh-1meeting-app/static/js/main.679a3319.chunk.js.map",
+    "main.js": "/reh-1meeting-app/static/js/main.606bc8d1.chunk.js",
+    "main.js.map": "/reh-1meeting-app/static/js/main.606bc8d1.chunk.js.map",
     "runtime-main.js": "/reh-1meeting-app/static/js/runtime-main.57b2ebf2.js",
     "runtime-main.js.map": "/reh-1meeting-app/static/js/runtime-main.57b2ebf2.js.map",
     "static/css/2.9315eea2.chunk.css": "/reh-1meeting-app/static/css/2.9315eea2.chunk.css",
-    "static/js/2.95f85c98.chunk.js": "/reh-1meeting-app/static/js/2.95f85c98.chunk.js",
-    "static/js/2.95f85c98.chunk.js.map": "/reh-1meeting-app/static/js/2.95f85c98.chunk.js.map",
+    "static/js/2.b288eda7.chunk.js": "/reh-1meeting-app/static/js/2.b288eda7.chunk.js",
+    "static/js/2.b288eda7.chunk.js.map": "/reh-1meeting-app/static/js/2.b288eda7.chunk.js.map",
     "index.html": "/reh-1meeting-app/index.html",
-    "precache-manifest.25efb4b00a9f59f7c0bef225d715f236.js": "/reh-1meeting-app/precache-manifest.25efb4b00a9f59f7c0bef225d715f236.js",
+    "precache-manifest.5d3513e106f91b21c17b41e879aee63f.js": "/reh-1meeting-app/precache-manifest.5d3513e106f91b21c17b41e879aee63f.js",
     "service-worker.js": "/reh-1meeting-app/service-worker.js",
     "static/css/2.9315eea2.chunk.css.map": "/reh-1meeting-app/static/css/2.9315eea2.chunk.css.map",
     "static/css/main.d827372d.chunk.css.map": "/reh-1meeting-app/static/css/main.d827372d.chunk.css.map",
-    "static/js/2.95f85c98.chunk.js.LICENSE.txt": "/reh-1meeting-app/static/js/2.95f85c98.chunk.js.LICENSE.txt",
+    "static/js/2.b288eda7.chunk.js.LICENSE.txt": "/reh-1meeting-app/static/js/2.b288eda7.chunk.js.LICENSE.txt",
     "static/media/mdb.css": "/reh-1meeting-app/static/media/arrow_right.8ef6a08c.svg",
     "static/media/default-image.jpg": "/reh-1meeting-app/static/media/default-image.440b9b23.jpg",
     "static/media/all.min.css": "/reh-1meeting-app/static/media/fa-solid-900.8e1ed89b.woff2"
@@ -21,8 +21,8 @@
   "entrypoints": [
     "static/js/runtime-main.57b2ebf2.js",
     "static/css/2.9315eea2.chunk.css",
-    "static/js/2.95f85c98.chunk.js",
+    "static/js/2.b288eda7.chunk.js",
     "static/css/main.d827372d.chunk.css",
-    "static/js/main.679a3319.chunk.js"
+    "static/js/main.606bc8d1.chunk.js"
   ]
 }
