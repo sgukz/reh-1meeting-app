@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/reh-1meeting-app/precache-manifest.86e45816628a53e36eb0e5c87d48764b.js"
+  "/reh-1meeting-app/precache-manifest.44695f9baee6d93d304da4a9903bc464.js"
 );
 
 self.addEventListener('message', (event) => {
